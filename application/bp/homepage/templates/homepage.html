@@ -1,4 +1,10 @@
-{% extends "base.html" %}
-
-{% block title %}Hello, World{% endblock %}
-{% block content %}Blueprint {% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Welcome to the Homepage (Using Blueprint)</h1>
+    <a href="{{ url_for('homepage.about') }}">About</a>
+</body>
+</html>

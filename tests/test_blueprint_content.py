@@ -18,4 +18,4 @@ def test_about_page_content(client):
     """flask unit testing for content in about page"""
     response = client.get("/about")
     assert response.status_code == 200
-    assert b"about" in response.data
+    assert b"About" in response.data
